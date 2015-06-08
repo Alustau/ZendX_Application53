@@ -55,6 +55,16 @@ class Standard extends \Zend_Controller_Dispatcher_Standard
         }
         return $className;
     }
+    
+    /**
+     * {@inheritdoc}
+     * 
+     * Formating for namespace
+     */
+    public function formatClassName($moduleName, $className)
+    {
+        return $this->formatModuleName($moduleName) . '\\' . $this->_controllerNamespace . '\\' . $className;
+    }
 
     /**
      * {@inheritdoc}
