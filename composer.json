@@ -1,0 +1,22 @@
+{
+    "name":        "alustau/application53",
+    "type":        "library",
+    "description": "Zend Framework 1 extra libraries",
+    "keywords":    ["namespace", "zend"],
+    "homepage":    "https://github.com/mridgway/ZendX_Application53",
+    "license":     "MIT",
+    
+    "autoload": {
+        "psr-0": {
+            "ZendX": "lib/"
+        }
+    },
+
+    "require": {
+        "php":  ">=5.3",
+        "zendframework/zendframework1": "1.*"
+    },
+    "include-path": [
+        "lib/"
+    ]
+}
